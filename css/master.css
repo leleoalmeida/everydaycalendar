@@ -1,0 +1,35 @@
+body {
+  background-color: #005288;
+  width: 100vw;
+  height: 100vh;
+}
+
+.grid-container {
+  display:flex;
+  margin: 0 auto;
+}
+
+.calendar-container {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+#calendar-grid {
+  grid-auto-flow: column;
+  min-width: 100px;
+  min-height: 100px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: [content-start] min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content;
+
+  grid-template-rows: min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content;
+}
+
+.day-container {
+  margin: 5px 10px;
+}
+
+.day-hex {
+  height: 60px;
+}
