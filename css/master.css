@@ -2,10 +2,11 @@ body {
   background-color: #005288;
   width: 100vw;
   height: 100vh;
+  font-family: sans-serif;
 }
 
 .grid-container {
-  display:flex;
+  display: flex;
   margin: 0 auto;
 }
 
@@ -23,13 +24,36 @@ body {
   margin: 0 auto;
   grid-template-columns: [content-start] min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content;
 
-  grid-template-rows: min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content;
+  grid-auto-rows: 40px;
+}
+
+.month {
+  grid-row: 1;
+  text-align: center;
+  color: white;
+font-size: 1rem;
 }
 
 .day-container {
-  margin: 5px 10px;
+  margin: 5px 20px;
+  height: auto;
 }
 
+/* .day-number-container {
+  position: absolute;
+
+} */
 .day-hex {
   height: 60px;
+}
+
+.day-number {
+  color: white;
+  text-align: center;
+  width: 26.84px;
+  line-height: 30px;
+  margin: 0;
+  position: absolute;
+  cursor: default;
+
 }
